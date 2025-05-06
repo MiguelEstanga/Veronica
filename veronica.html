@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veronica Perez</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      .material-icons {
+        font-size: 24px;
+      }
+      .bg-pastel-rosa-fresa {
+        background-color: #FFB6C1; /* Rosa Fresa */
+      }
+      .text-pastel-rosa-fresa {
+        color: #FFB6C1; /* Rosa Fresa */
+      }
+      .bg-pastel-rosa-pastel {
+        background-color: #FFD1DC; /* Rosa Pastel */
+      }
+      .text-pastel-rosa-pastel {
+        color: black; /* Rosa Pastel */
+      }
+    </style>
+</head>
+<body class="bg-pastel-rosa-pastel">
+    <header class="bg-pastel-rosa-fresa shadow-md sticky top-0 z-10">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="text-xl font-semibold text-pastel-rosa-pastel">
+                <span class="material-icons">palette</span> Veronica Perez
+            </a>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="#sobre-mi" class="text-pastel-rosa-pastel hover:text-pastel-rosa-fresa transition duration-300">Sobre Mí</a></li>
+                    <li><a href="#habilidades" class="text-pastel-rosa-pastel hover:text-pastel-rosa-fresa transition duration-300">Habilidades</a></li>
+                    <li><a href="#galeria" class="text-pastel-rosa-pastel hover:text-pastel-rosa-fresa transition duration-300">Galería</a></li>
+                </ul>
+            </nav>
+            <button id="hamburger-btn" class="md:hidden text-pastel-rosa-pastel focus:outline-none" aria-label="Menú">
+                <span class="material-icons">menu</span>
+            </button>
+        </div>
+    </header>
+
+    <div id="mobile-menu" class="hidden fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-90 z-20">
+        <div class="bg-pastel-rosa-fresa w-80 h-full absolute right-0 p-6">
+            <div class="flex justify-end mb-4">
+                <button id="close-menu-btn" class="text-pastel-rosa-pastel focus:outline-none" aria-label="Cerrar menú">
+                    <span class="material-icons">close</span>
+                </button>
+            </div>
+            <nav class="block">
+                <ul class="space-y-4">
+                    <li><a href="#sobre-mi" class="block text-lg text-pastel-rosa-pastel hover:text-pastel-rosa-fresa transition duration-300">Sobre Mí</a></li>
+                    <li><a href="#habilidades" class="block text-lg text-pastel-rosa-pastel hover:text-pastel-rosa-fresa transition duration-300">Habilidades</a></li>
+                    <li><a href="#galeria" class="block text-lg text-pastel-rosa-pastel hover:text-pastel-rosa-fresa transition duration-300">Galería</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section id="sobre-mi" class="container mx-auto px-4 py-16 flex flex-col md:flex-row items-center gap-8">
+        <div class="md:w-1/2">
+            <img src="perfil.jpg" alt="Tu Foto de Maquilladora" class="rounded-lg shadow-lg w-full max-w-md">
+        </div>
+        <div class="md:w-1/2 text-center md:text-left">
+            <h2 class="text-3xl font-semibold text-pastel-rosa-fresa mb-4">Sobre Mí</h2>
+            <p class="text-gray-700 leading-relaxed">
+                ¡Hola! Soy una maquilladora apasionada  con experiencia en ventas y atención al cliente. He construido mi clientela desde cero,
+                vendiendo mis servicios directamente y logrando un alcance de más de 38 clientes satisfechos. Me encanta realzar la belleza natural
+                y crear looks que hagan sentir a mis clientes seguros y radiantes . 
+            </p>
+            <ol  style="margin-top: 10px;">
+                <li>Telefono : 04124242536</li>
+                <li>Email : vp2416111@gmail.com</li>
+                <li>Educacion : Bachiller en ciencias</li>
+            </ol>
+            
+        </div>
+    </section>
+
+    <section id="habilidades" class="bg-pastel-rosa-fresa py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold text-pastel-rosa-pastel text-center mb-8">Habilidades</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md p-6 flex items-center gap-4">
+                    <span class="material-icons text-pastel-rosa-fresa">shopping_bag</span>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800">Ventas</h3>
+                        <p class="text-gray-600">Venta directa de servicios de maquillaje.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 flex items-center gap-4">
+                    <span class="material-icons text-pastel-rosa-fresa">cleaning_services</span>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800">Limpieza de Uñas</h3>
+                        <p class="text-gray-600">Preparación y limpieza profesional de uñas.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 flex items-center gap-4">
+                   <span class="material-icons text-pastel-rosa-fresa">brush</span>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800">Diseño de Uñas</h3>
+                        <p class="text-gray-600">Diseño creativo y aplicación de uñas.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 flex items-center gap-4">
+                    <span class="material-icons text-pastel-rosa-fresa">palette</span>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800">Maquillaje</h3>
+                        <p class="text-gray-600">Maquillaje para diversas ocasiones.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 flex items-center gap-4">
+                    <span class="material-icons text-pastel-rosa-fresa">content_cut</span>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800">Pulido de Cejas</h3>
+                        <p class="text-gray-600">Diseño y pulido de cejas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="container mx-auto px-4 py-16">
+        <h2 class="text-3xl font-semibold text-pastel-rosa-fresa text-center mb-8">Galería</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="rounded-lg overflow-hidden shadow-md">
+                <img src="1.jpeg" alt="Trabajo de Maquillaje 1" class="w-full h-64 object-cover">
+            </div>
+            <div class="rounded-lg overflow-hidden shadow-md">
+                <img src="2.jpg" alt="Trabajo de Maquillaje 2" class="w-full h-64 object-cover">
+            </div>
+            <div class="rounded-lg overflow-hidden shadow-md">
+                <img src="3.PNG" alt="Trabajo de Maquillaje 3" class="w-full h-64 object-cover">
+            </div>
+            <div class="rounded-lg overflow-hidden shadow-md">
+                <img src="4.jpg" alt="Trabajo de Maquillaje 4" class="w-full h-64 object-cover">
+            </div>
+            <div class="rounded-lg overflow-hidden shadow-md">
+                <img src="perfil.jpg" alt="Trabajo de Maquillaje 5" class="w-full h-64 object-cover">
+            </div>
+            <div class="rounded-lg overflow-hidden shadow-md">
+                <img src="3.PNG" alt="Trabajo de Maquillaje 6" class="w-full h-64 object-cover">
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 py-6">
+        <div class="container mx-auto px-4 text-center text-gray-300">
+            <p>&copy; 2024 Mi Portafolio de Maquillaje. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        const hamburgerBtn = document.getElementById("hamburger-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const closeMenuBtn = document.getElementById("close-menu-btn");
+        const mobileMenuLinks = mobileMenu.querySelectorAll("a");
+        const navLinks = document.querySelectorAll('header nav a');
+        const sections = document.querySelectorAll('section');
+
+        function toggleMobileMenu() {
+            mobileMenu.classList.toggle("hidden");
+        }
+
+        hamburgerBtn.addEventListener("click", toggleMobileMenu);
+        closeMenuBtn.addEventListener("click", toggleMobileMenu);
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener("click", toggleMobileMenu);
+        });
+
+        document.addEventListener('click', (event) => {
+            if (!mobileMenu.classList.contains('hidden') && !mobileMenu.contains(event.target) && event.target !== hamburgerBtn) {
+                toggleMobileMenu();
+            }
+        });
+
+        function updateActiveNavLink() {
+            let currentSectionId = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.scrollY >= sectionTop - 100 && window.scrollY < sectionTop + sectionHeight - 100) {
+                    currentSectionId = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').slice(1) === currentSectionId) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', updateActiveNavLink);
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = link.getAttribute('href').slice(1);
+                const targetSection = document.getElementById(targetId);
+                if (targetSection) {
+                    window.scrollTo({
+                        top: targetSection.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Smooth scrolling for mobile menu links
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = link.getAttribute('href').slice(1);
+                const targetSection = document.getElementById(targetId);
+                if (targetSection) {
+                    window.scrollTo({
+                        top: targetSection.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    toggleMobileMenu();
+                }
+            });
+        });
+
+    </script>
+</body>
+</html>
